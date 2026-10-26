@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<title>awesome-market--engine</title>
+<style>
+body{margin:0;background:#0a0a0a;color:#fff;font-family:sans-serif}
+header{display:flex;align-items:center;gap:12px;padding:16px}
+main{padding:24px}
+.badge{display:inline-block;background:#222;padding:6px 10px;border-radius:8px}
+footer{padding:20px;color:#666;font-size:12px}
+.logo{height:40px}
+</style>
+</head>
+<body>
+<img class="logo" src="logo.png" alt="Awesome Market Engine">
+
+<div style="font-weight:800;letter-spacing:1px;padding:0 16px">
+<span class="badge">Tenant Mode: Isolated | AME-7742-PSALM-121-4</span>
+</div>
+
+<main data-tenant="isolated">
+<h2>Platform Online</h2>
+<p>Engine lock active: AME-7742-PSALM-121-4</p>
+<button onclick="ameLockCustomer(prompt('Enter key'))">Unlock</button>
+<p id="out"></p>
+</main>
+
+<footer>Built in Acode</footer>
+<script src="supabase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
